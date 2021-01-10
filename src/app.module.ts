@@ -5,7 +5,7 @@ import {AuthenticationModule} from './authentication/authentication.module';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://127.0.0.1/dream2', {
+    MongooseModule.forRoot('mongodb+srv://trilh3:TOT%40Fa123@cluster0.hvheb.mongodb.net/dream2?retryWrites=true&w=majority', {
         useNewUrlParser: true,
         useCreateIndex: true,
         useFindAndModify: false,
