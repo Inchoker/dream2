@@ -1,11 +1,15 @@
 import { Body, Controller, HttpStatus, Post } from '@nestjs/common';
-import { ApiOperation, ApiResponse, ApiUseTags, ApiImplicitBody } from '@nestjs/swagger';
+import {
+  ApiOperation,
+  ApiResponse,
+  ApiUseTags,
+  ApiImplicitBody,
+} from '@nestjs/swagger';
 import { UserService } from './user.service';
 import { UserCreateDto, UserCreateResponse } from './user.dto';
 @Controller('user')
 export class UserController {
-  constructor(private userService: UserService) {
-  }
+  constructor(private userService: UserService) {}
 
   @ApiUseTags('User')
   @Post()

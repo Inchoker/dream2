@@ -14,8 +14,8 @@ export const UserSchema = new Schema(
       type: String,
       require: true,
     },
-
-  }, {
-    timestamps: { createdAt: 'created_at', updatedAt: 'updated_at'}
+  },
+  {
+    timestamps: { createdAt: 'created_at', updatedAt: 'updated_at' },
   },
 );
